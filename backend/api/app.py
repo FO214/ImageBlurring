@@ -1,4 +1,4 @@
-from backend.blur import imageToPixels, blur, render_blur
+from blur import imageToPixels, blur, render_blur
 from flask import Flask, request, send_file
 import requests
 from PIL import Image
