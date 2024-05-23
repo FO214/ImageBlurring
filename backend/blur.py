@@ -27,7 +27,7 @@ def imageToPixels(image_path: str):
     return Im(pixels, width, height, image_path[0:-4])
 
 
-# blur the actual image // just make it height and width - 1 type shi 
+# blur the actual image 
 def blur(image: Im, blur_level):
 
     for row in range(blur_level, image.height - blur_level):
