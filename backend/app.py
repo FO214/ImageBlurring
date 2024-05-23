@@ -27,6 +27,5 @@ def blur_image():
 
     return send_file(img_bytes, mimetype='image/png')
 
-
 if __name__ == "__main__":
     app.run(debug=True)
