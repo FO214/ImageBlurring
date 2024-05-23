@@ -56,7 +56,7 @@ def render_blur(image: Im):
     myImage = img.new('RGB', (image.width, image.height))
     myImage.putdata(flattened_pixels)
 
-    myImage.save(image.path + '_blurred.png')
+    myImage.save("/tmp/" + image.path + '_blurred.png')
 
-    return image.path + '_blurred.png'
+    return "/tmp/" + image.path + '_blurred.png'
 
