@@ -64,7 +64,7 @@ const App = () => {
             responseType: "arraybuffer",
         };
 
-        const response = await axios.post("http://127.0.0.1:5000", formData, config);
+        const response = await axios.post("https://image-blurring-backend.vercel.app/", formData, config);
 
         // Convert the binary data received from the server to a blob and create a URL for the blurred image
         console.log(response.data)
